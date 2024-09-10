@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Máquina por Golpe Estructural</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 15px;
+            line-height: 1.6;
+        }
+        .header-table {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-table img {
+            max-width: 30%;
+            height: auto;
+        }
+        .header-table div {
+            text-align: center;
+            flex: 1;
+            padding: 0 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        select, textarea, input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: none;
+            overflow: hidden;
+            min-height: 50px;
+            transition: height 0.2s;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        @media screen and (max-width: 768px) {
+            .header-table {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-table img {
+                max-width: 50%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con logotipos y títulos -->
+    <div class="header-table">
+        <img src="https://i.postimg.cc/x8D3wZ33/Cerrejon.png" alt="Logo de Cerrejón" />
+        <div>
+            <img src="https://i.postimg.cc/7h3nwNB8/Safe-work-LOGO.png" alt="SAFE WORK Glencore" />
+        </div>
+        <img src="https://i.postimg.cc/zDKjCJqt/Truck-LOGO.jpg" alt="Camion 793D" />
+    </div>
+
+    <!-- Título de la Evaluación -->
+    <h1>Evaluación de Máquina por Golpe Estructural</h1>
+    <p>Formulario para evaluar diferentes aspectos de la máquina en función de su estructura y estado operativo.</p>
+
+    <!-- Detalles de la Evaluación -->
+    <h2>Detalles de la Evaluación</h2>
+    <table>
+        <tr>
+            <td><label for="modelo">Modelo:</label></td>
+            <td><input type="text" id="modelo" name="modelo" placeholder="Ingrese el modelo"></td>
+        </tr>
+        <tr>
+            <td><label for="equipo">Equipo:</label></td>
+            <td><input type="text" id="equipo" name="equipo" placeholder="Ingrese el equipo"></td>
+        </tr>
+        <tr>
+            <td><label for="falla">Falla:</label></td>
+            <td><input type="text" id="falla" name="falla" placeholder="Describa la falla"></td>
+        </tr>
+        <tr>
+            <td><label for="nombre-ejecutor">Nombre del ejecutor:</label></td>
+            <td><input type="text" id="nombre-ejecutor" name="nombre-ejecutor" placeholder="Ingrese el nombre del ejecutor"></td>
+        </tr>
+    </table>
+
+    <!-- Sección para evaluar la transmisión -->
+    <h3>Transmisión (por golpe)</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Aspecto</th>
+                <th>Estado</th>
+                <th>Comentarios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Operando en el equipo, reporte por Maria Vergara del estado de esta.</td>
+                <td>
+                    <select>
+                        <option value="ok">OK</option>
+                        <option value="not-ok">NOT OK</option>
+                        <option value="na">N/A</option>
+                    </select>
+                </td>
+                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Sección para evaluar el convertidor -->
+    <h3>Convertidor (por golpe)</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Aspecto</th>
+                <th>Estado</th>
+                <th>Comentarios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Operando en el equipo, reporte por Maria Vergara del estado de este.</td>
+                <td>
+                    <select>
+                        <option value="ok">OK</option>
+                        <option value="not-ok">NOT OK</option>
+                        <option value="na">N/A</option>
+                    </select>
+                </td>
+                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Sección para evaluar las espigas de las suspensiones frontales -->
+    <h3>Espigas de las suspensiones frontales</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Aspecto</th>
+                <th>Estado</th>
+                <th>Comentarios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fracturas, rótulas fracturadas, estado de los cilindros (rígidos, permiten calibración, pegados)</td>
+                <td>
+                    <select>
+                        <option value="ok">OK</option>
+                        <option value="not-ok">NOT OK</option>
+                        <option value="na">N/A</option>
+                    </select>
+                </td>
+                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Sección para evaluar el brazo central de la dirección -->
+    <h3>Brazo central de la dirección</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Aspecto</th>
+                <th>Estado</th>
+                <th>Comentarios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juego a base chasis, dobles, etc.</td>
+                <td>
+                    <select>
+                        <option value="ok">OK</option>
+                        <option value="not-ok">NOT OK</option>
+                        <option value="na">N/A</option>
+                    </select>
+                </td>
+                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Sección para evaluar las barras de dirección -->
+    <h3>Barras de dirección</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Aspecto</th>
+                <th>Estado</th>
+                <th>Comentarios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Estado de boll stud, si están torcidas, si requiere planos para medirlas, etc.</td>
+                <td>
+                    <select>
+                        <option value="ok">OK</option>
+                        <option value="not-ok">NOT OK</option>
+                        <option value="na">N/A</option>
+                    </select>
+                </td>
+                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Sección para evaluar las suspensiones traseras -->
+    <h3>Estado de las suspensiones traseras</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Aspecto</th>
+                <th>Estado</th>
+                <th>Comentarios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rótulas fracturadas, etc.</td>
+                <td>
+                    <select>
+                        <option value="ok">OK</option>
+                        <option value="not-ok">NOT OK</option>
+                        <option value="na
