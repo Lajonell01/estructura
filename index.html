@@ -66,6 +66,17 @@
         button:hover {
             background-color: #45a049;
         }
+        input[type="file"] {
+            display: block;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .img-preview {
+            margin-top: 10px;
+            max-width: 40%;
+            height: auto;
+            display: none;
+        }
         @media screen and (max-width: 768px) {
             .header-table {
                 flex-direction: column;
@@ -134,7 +145,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -159,10 +174,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
-            </tr>
-            <tr>
-                <td colspan=3><input type="file" accept="image/*"></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -187,7 +203,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -212,7 +232,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -237,7 +261,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -262,7 +290,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -287,7 +319,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -312,7 +348,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -337,7 +377,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -362,7 +406,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -387,7 +435,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -412,7 +464,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -437,7 +493,11 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
@@ -462,12 +522,16 @@
                         <option value="na">N/A</option>
                     </select>
                 </td>
-                <td><textarea placeholder="Añadir comentarios..."></textarea></td>
+                <td>
+                    <textarea placeholder="Añadir comentarios..."></textarea>
+                    <input type="file" accept="image/*" onchange="previewImage(event, this)">
+                    <img class="img-preview">
+                </td>
             </tr>
         </tbody>
     </table>
 
-    <!-- Botones para generar PDF y compartir -->
+    <!-- Botón para generar PDF -->
     <button onclick="generatePDF()">Generar PDF</button>
 
     <!-- Script para autoajustar el tamaño del textarea -->
@@ -478,6 +542,23 @@
                 this.style.height = (this.scrollHeight) + 'px';
             });
         });
+    </script>
+
+    <!-- Script para previsualizar las imágenes cargadas -->
+    <script>
+        function previewImage(event, input) {
+            const preview = input.nextElementSibling; // Selecciona la imagen siguiente al input file
+            const reader = new FileReader();
+            
+            reader.onload = function(){
+                preview.src = reader.result; // Establece la fuente de la imagen como el resultado de la lectura
+                preview.style.display = 'block'; // Muestra la imagen
+            }
+            
+            if(input.files && input.files[0]){
+                reader.readAsDataURL(input.files[0]); // Lee la imagen cargada
+            }
+        }
     </script>
 
     <!-- Script para generar el PDF -->
